@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ac-shop/static/css/main.073c9b0a.css",
+    "main.js": "/ac-shop/static/js/main.e241e17f.js",
+    "static/js/787.4e8ea322.chunk.js": "/ac-shop/static/js/787.4e8ea322.chunk.js",
+    "index.html": "/ac-shop/index.html",
+    "main.073c9b0a.css.map": "/ac-shop/static/css/main.073c9b0a.css.map",
+    "main.e241e17f.js.map": "/ac-shop/static/js/main.e241e17f.js.map",
+    "787.4e8ea322.chunk.js.map": "/ac-shop/static/js/787.4e8ea322.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.e241e17f.js"
+  ]
+}
