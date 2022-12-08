@@ -6,6 +6,10 @@ header {
   text-align: center;
 }
 
+a {
+  color: #2a2a2a;
+}
+
 .header-logo-container {
   width: 135.86px;
   height: 24px;
@@ -23,43 +27,56 @@ header {
   left: 7.5%;
   display: flex;
   align-items: center;
-}
 
-.burger-container {
-  width: 20px;
-  height: 15px;
+  .icon-toggle {
+    cursor: pointer;
+  }
+
+  .burger-container {
+    width: 20px;
+    height: 15px;
+  }
 }
 
 .navbar-toggle {
   display: none;
-}
 
-.icon-toggle {
-  cursor: pointer;
-}
+  &:checked ~ .navbar-menu {
+    transform: scale(1, 1);
 
+    .nav-item__link,
+    .nav-item__icon {
+      transition: opacity 0.2s ease-out 0.15s;
+      opacity: 1;
+    }
+  }
+}
 
 .navbar-menu {
   position: absolute;
   top: 100%;
   width: 100%;
-}
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 0.5s ease-out;
 
+  .nav-item {
+    &__link {
+      padding: 1.5625rem 0;
+      border: 1px solid rgba(42, 42, 42, 0.1);
+      transition: opacity 0.2s ease-out;
+      opacity: 0;
+    }
 
-.nav-item {
-
-  &__link {
-    padding: 1.5625rem 0;
-    border: 1px solid rgba(42, 42, 42, 0.1);
+    &__icon {
+      display: inline-block;
+      width: 21px;
+      height: 21px;
+      transition: opacity 0.2s ease-out;
+      opacity: 0;
+    }
   }
-
-  &__icon {
-    display: inline-block;
-    width: 21px;
-    height: 21px;
-  }
 }
-
 
 .nav-list-icon {
   display: flex;
@@ -67,15 +84,15 @@ header {
   gap: 2.6875rem;
   justify-content: center;
   align-items: center;
-}
 
-.nav-icon-sun {
-  display: none;
-}
+  .nav-icon-sun {
+    display: none;
+  }
 
-.nav-icon-search,
-.nav-icon-cart,
-.nav-icon-moon,
-.nav-icon-sun {
-  cursor: pointer;
+  .nav-icon-search,
+  .nav-icon-cart,
+  .nav-icon-moon,
+  .nav-icon-sun {
+    cursor: pointer;
+  }
 }

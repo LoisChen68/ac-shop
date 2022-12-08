@@ -11,41 +11,53 @@ export default function Header() {
     <>
       <header>
         <div className={style['header-container']}>
+          <a className={style['header-logo-container']} href="#">
+            <img className={style['icon-logo']} src={Logo} />
+          </a>
           <div className={style['navbar-burger-warper']}>
-            <input id="navbar-toggle" className={style['navbar-toggle']} type="checkbox" />
-            <label htmlFor="navbar-toggle" className={style['burger-container']}>
-              <img src={Vector} className={style['icon-toggle']}>
-              </img>
+            <label
+              htmlFor="navbar-toggle"
+              className={style['burger-container']}
+            >
+              <img src={Vector} className={style['icon-toggle']} />
             </label>
           </div>
-          <a className={style['header-logo-container']} href="#">
-            <img
-              className={style['icon-logo']}
-              src={Logo}
-            />
-          </a>
+          <input
+            id="navbar-toggle"
+            className={style['navbar-toggle']}
+            type="checkbox"
+          />
           <nav className={style['navbar-menu']}>
             <ul className={style['nav-list-text-link']}>
               <li className={style['nav-item__link']}>
-                <a className={style['nav-link']} href="#">男款</a>
+                <a className={style['nav-link']} href="#">
+                  男款
+                </a>
               </li>
               <li className={style['nav-item__link']}>
-                <a className={style['nav-link']} href="#">女款</a>
+                <a className={style['nav-link']} href="#">
+                  女款
+                </a>
               </li>
               <li className={style['nav-item__link']}>
-                <a className={style['nav-link']} href="#">最新消息</a>
+                <a className={style['nav-link']} href="#">
+                  最新消息
+                </a>
               </li>
               <li className={style['nav-item__link']}>
-                <a className={style['nav-link']} href="#">客製商品</a>
+                <a className={style['nav-link']} href="#">
+                  客製商品
+                </a>
               </li>
               <li className={style['nav-item__link']}>
-                <a className={style['nav-link']} href="#">聯絡我們</a>
+                <a className={style['nav-link']} href="#">
+                  聯絡我們
+                </a>
               </li>
             </ul>
             <ul className={style['nav-list-icon']}>
               <li className={style['nav-item__icon']}>
-                <img src={Search} className={style['nav-icon-search']}>
-                </img>
+                <img src={Search} className={style['nav-icon-search']}></img>
               </li>
               <li className={style['nav-item__icon']}>
                 <img src={Cart} className={style['nav-icon-cart']} />
