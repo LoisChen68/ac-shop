@@ -1,0 +1,99 @@
+%circle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  border: 1px #afb1bd solid;
+  border-radius: 23px;
+  color: #afb1bd;
+}
+
+%connect-line {
+  width: 3.75rem;
+  display: block;
+  height: 2px;
+  background-color: #afb1bd;
+}
+
+.progress-panel {
+  width: 100%;
+}
+
+.progress-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 2rem;
+}
+
+.progress-label {
+  display: none;
+  color: #2a2a2a;
+}
+
+/*TODO: 之後回來重構*/
+.step {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-family: 'Nunito Sans';
+  font-weight: 700;
+  gap: 0.5rem;
+
+  &:nth-child(1) .circle-container {
+    &::after,
+    &-active::after {
+      content: '1';
+    }
+
+    &-checked::after {
+      content: '\2714';
+    }
+  }
+
+  &:nth-child(3) .circle-container {
+    &::after,
+    &-active::after {
+      content: '2';
+    }
+
+    &-checked::after {
+      content: '\2714';
+    }
+  }
+
+  &:nth-child(5) .circle-container {
+    &::after,
+    &-active::after {
+      content: '3';
+    }
+
+    &-checked::after {
+      content: '\2714';
+    }
+  }
+}
+
+.circle-container {
+  @extend %circle-container;
+
+  &-active,
+  &-checked {
+    @extend %circle-container;
+    background-color: #2a2a2a;
+    border: 0px rgba(255, 255, 255, 0);
+    color: #fff;
+  }
+}
+
+.connect-line {
+  @extend %connect-line;
+
+  &-active {
+    @extend %connect-line;
+    background-color: #2a2a2a;
+  }
+}
