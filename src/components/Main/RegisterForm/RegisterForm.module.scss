@@ -1,0 +1,21 @@
+.step-title {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.person-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.875rem;
+}
+
+.form-container {
+  position: relative;
+}
+
+.form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

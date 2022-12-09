@@ -1,0 +1,46 @@
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-label {
+  font-size: 12px;
+  display: flex;
+  color: #808080;
+  margin-bottom: 8px;
+}
+
+.select {
+  height: 40px;
+  padding: 0 0 0 1rem;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #4a4a4a;
+  border-radius: 4px;
+  color: #808080;
+  font-family: 'Noto Sans TC';
+  font-size: 12px;
+  -webkit-appearance: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #f67599;
+  }
+}
+
+.select-wrapper {
+  display: grid;
+  position: relative;
+
+  &::after {
+    content: '';
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #2a2a2a transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+}

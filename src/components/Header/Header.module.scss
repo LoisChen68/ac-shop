@@ -58,10 +58,11 @@ a {
 .navbar-menu {
   position: absolute;
   top: 100%;
-  width: 80%;
+  width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 0.5s ease-out;
+  background-color: #fff;
 }
 
 .nav-list-link {

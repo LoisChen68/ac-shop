@@ -1,4 +1,5 @@
 import style from './Main.module.scss'
+import RegisterForm from './RegisterForm/RegisterForm'
 import StepProgress from './StepProgress/StepProgress'
 
 export default function Main() {
@@ -7,10 +8,11 @@ export default function Main() {
       <main className={style['site-main']}>
         <div className={style['main-container']}>
           {/* register-title */}
-          <div className={style['step-title']}>
-            <h2>結帳</h2>
+          <div className={style['checkout-title']}>
+            <h3>結帳</h3>
           </div>
           <StepProgress />
+          <RegisterForm />
         </div>
       </main>
     </>

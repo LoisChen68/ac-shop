@@ -4,7 +4,12 @@
   width: 100%;
 }
 
-.step-title {
+.checkout-title {
   display: flex;
   justify-items: flex-start;
+
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    padding-top: 80px;
+  }
 }
